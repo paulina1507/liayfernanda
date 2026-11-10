@@ -209,8 +209,8 @@
 /* BASE */
 .flower {
   position: absolute;
-  width: 220px;
-  height: 220px;
+  width: 80px;
+  height: 80px;
   background-size: contain;
   background-repeat: no-repeat;
   pointer-events: none;
@@ -220,76 +220,6 @@
   will-change: transform;
 }
 
-/* FLORES DECORATIVAS */
-.flower--top {
-  top: -18px;
-  left: -15px;
-  /* Antes: -48px */
-  background-image: url("../img/decorativo.png");
-  transform: translateY(-80px);
-}
-
-.flower--bottom {
-  bottom: -20px;
-  /* Antes: -38px */
-  right: -15px;
-  /* Antes: -48px */
-  background-image: url("../img/decorativo.png");
-  transform: translate(80px, 80px);
-}
-
-/* ACTIVACIÓN POR SCROLL */
-.section--flowers.flowers-visible .flower--top {
-  animation:
-    flowerTopEnter 1.2s ease forwards,
-    flowerTopFloat 16s ease-in-out infinite 1.2s;
-}
-
-.section--flowers.flowers-visible .flower--bottom {
-  animation:
-    flowerBottomEnter 1.2s ease forwards,
-    flowerBottomFloat 18s ease-in-out infinite 1.4s;
-}
-
-/* ENTRADA */
-@keyframes flowerTopEnter {
-  from {
-    opacity: 0;
-    transform: translateY(-80px);
-  }
-
-  to {
-    opacity: 0.9;
-    transform: translateY(0);
-  }
-}
-
-@keyframes flowerBottomEnter {
-  from {
-    opacity: 0;
-    transform: translate(80px, 80px);
-  }
-
-  to {
-    opacity: 0.9;
-    transform: translate(0, 0);
-  }
-}
-
-.section--flowers.flowers-visible .flower--top,
-.section--flowers.flowers-visible .flower--bottom {
-  animation: flowerEnter 1.2s ease forwards;
-}
-
-@keyframes flowerEnter {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 0.9;
-  }
-}
 
 /* =====================================================
    UBICACIÓN / LUGAR
@@ -798,6 +728,7 @@
 .dresscode-grid:empty {
   display: none;
 }
+
 /* =========================
    DESKTOP
    ========================= */
@@ -918,24 +849,6 @@ body {
   .reveal-right.is-visible {
     transform: translateX(0);
   }
-}
-
-@media (max-width: 480px) {
-  .flower {
-    width: 120px;
-    height: 120px;
-    opacity: 0.65;
-  }
-
-  .flower--top {
-    top: -12px;
-    left: -28px;
-  }
-
-  .flower--bottom {
-    right: -18px;
-  }
-
 }
 
 /* ===============================
@@ -1207,34 +1120,56 @@ body {
   will-change: transform;
 }
 
-.flower--top {
-  top: -18px;
-  left: -48px;
+
+/* =====================================================
+   FLORES DECORATIVAS
+   ===================================================== */
+
+.section--flowers {
+  position: relative;
+  overflow: hidden;
+}
+
+.section--flowers .container {
+  position: relative;
+  z-index: 4;
+}
+
+.flower {
+  position: absolute;
+  width: 120px;
+  height: 120px;
   background-image: url("../img/decorativo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 5;
+  will-change: transform;
+}
+
+.flower--top {
+  top: -10px;
+  left: 5px;
   transform: translateY(-80px);
 }
 
 .flower--bottom {
-  bottom: -38px;
-  right: -48px;
-  background-image: url("../img/decorativo.png");
+  bottom: -10px;
+  right: 5px;
   transform: translate(80px, 80px);
 }
 
-/* ACTIVACIÓN POR SCROLL */
+/* Entrada */
 .section--flowers.flowers-visible .flower--top {
-  animation:
-    flowerTopEnter 1.2s ease forwards,
-    flowerTopFloat 16s ease-in-out infinite 1.2s;
+  animation: flowerTopEnter 1.2s ease forwards;
 }
 
 .section--flowers.flowers-visible .flower--bottom {
-  animation:
-    flowerBottomEnter 1.2s ease forwards,
-    flowerBottomFloat 18s ease-in-out infinite 1.4s;
+  animation: flowerBottomEnter 1.2s ease forwards;
 }
 
-/* ENTRADA */
 @keyframes flowerTopEnter {
   from {
     opacity: 0;
@@ -1242,7 +1177,7 @@ body {
   }
 
   to {
-    opacity: 0.9;
+    opacity: 0.85;
     transform: translateY(0);
   }
 }
@@ -1254,25 +1189,29 @@ body {
   }
 
   to {
-    opacity: 0.9;
+    opacity: 0.85;
     transform: translate(0, 0);
   }
 }
 
-.section--flowers.flowers-visible .flower--top,
-.section--flowers.flowers-visible .flower--bottom {
-  animation: flowerEnter 1.2s ease forwards;
-}
-
-@keyframes flowerEnter {
-  from {
-    opacity: 0;
+/* MÓVIL */
+@media (max-width: 480px) {
+  .flower {
+    width: 90px;
+    height: 90px;
   }
 
-  to {
-    opacity: 0.9;
+  .flower--top {
+    top: -10px;
+    left: -10px;
+  }
+
+  .flower--bottom {
+    bottom: -12px;
+    right: -10px;
   }
 }
+
 
 /* =====================================================
    UBICACIÓN / LUGAR
