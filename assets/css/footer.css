@@ -1,0 +1,66 @@
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+.footer {
+  padding: 2.2rem 1rem 1.8rem; /* 👈 menos alto */
+  background-color: var(--bg-main);
+  border-top: 1px solid rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+/* Nombre */
+.footer p {
+  font-family: var(--font-script);
+  font-size: 1.4rem; /* 👈 un poco menor */
+  color: var(--color-primary);
+  margin-bottom: 0.4rem;
+}
+
+/* Créditos */
+.footer small {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 1.4rem; /* 👈 menos espacio */
+  opacity: 0.85;
+}
+
+/* Redes */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 1.2rem; /* 👈 menos espacio */
+}
+
+.footer-social img {
+  width: 26px; /* 👈 un poco más pequeños */
+  height: 26px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.85;
+}
+
+.footer-social a:hover img {
+  transform: translateY(-3px);
+  opacity: 1;
+}
+
+/* Website */
+.footer-website {
+  margin-top: 0.5rem;
+}
+
+.footer-website a {
+  font-size: 0.85rem; /* 👈 ligeramente más discreto */
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  transition: opacity 0.3s ease;
+}
+
+.footer-website a:hover {
+  opacity: 0.7;
+}

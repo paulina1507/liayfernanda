@@ -1,0 +1,106 @@
+:root {
+  /* =========================
+     BRAND / IDENTIDAD
+     CIELITO LINDO
+     ========================= */
+
+  /* 🌸 ROSA MEXICANO */
+  --color-primary: #E4007C;
+  --color-primary-light: #F5B6D0;
+
+  /* 🤍 BLANCO Y ROSAS */
+  --color-secondary: #FCEEF3;
+  --color-secondary-light: #FFF8FA;
+
+  --color-accent: #C94A82;
+  --color-envelope: #F8DCE7;
+
+  /* ✨ DORADO COMPLEMENTARIO */
+  --color-gold: #D4AF70;
+  /* Dorado champagne */
+  --color-gold-soft: #E8D5AD;
+  /* Dorado suave */
+  --color-gold-light: #FBF6EA;
+  /* Crema dorado */
+
+  /* =========================
+     BACKGROUNDS
+     ========================= */
+
+  --bg-main: #FFFFFF;
+
+  --bg-section: linear-gradient(135deg,
+      #FFFFFF 0%,
+      #FFF5F8 55%,
+      #FCEEF3 100%);
+
+  --bg-pink-soft: #FFF5F8;
+  --bg-white: #FFFFFF;
+
+  --bg-overlay: rgba(55, 25, 39, 0.38);
+
+  /* =========================
+     TEXTOS
+     ========================= */
+
+  --text-primary: #49343E;
+  --text-secondary: #79636D;
+  --text-muted: #A9959E;
+  --text-inverse: #FFFFFF;
+
+  /* =========================
+     LÍNEAS & SOMBRAS
+     ========================= */
+
+  --line-soft: #F0DCE5;
+
+  --shadow-soft:
+    0 18px 38px rgba(228, 0, 124, 0.10);
+
+  --shadow-light:
+    0 8px 20px rgba(201, 74, 130, 0.10);
+
+  /* =========================
+     TIPOGRAFÍAS
+     ========================= */
+
+  --font-script: "Great Vibes", cursive;
+  --font-title: "Playfair Display", serif;
+  --font-base: "Poppins", sans-serif;
+
+  /* =========================
+     ESCALA TIPOGRÁFICA
+     ========================= */
+
+  --fs-hero: 3.5rem;
+  --fs-h1: 3rem;
+  --fs-h2: 2.2rem;
+  --fs-h3: 1.6rem;
+  --fs-body: 1rem;
+  --fs-small: 0.85rem;
+
+  /* =========================
+     ESPACIADOS
+     ========================= */
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+
+  /* =========================
+     TRANSICIONES
+     ========================= */
+
+  --transition-fast: 0.3s ease;
+  --transition-medium: 0.6s ease;
+
+  /* =========================
+     BORDER RADIUS
+     ========================= */
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+}

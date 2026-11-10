@@ -1,0 +1,190 @@
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.header.scrolled {
+  background-color: var(--bg-main);
+  box-shadow: var(--shadow-light);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =========================
+   LOGO
+   ========================= */
+.header-logo a {
+  font-family: var(--font-script);
+  font-size: 1.4rem;
+  color: var(--color-primary);
+}
+
+/* Contenedor logo */
+.header-logo {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* mini efecto elegante */
+.header:hover .header-crown {
+  transform: translateY(-2px) scale(1.03);
+}
+
+/* Contenedor logo */
+.header-logo {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Corona */
+.header-crown {
+  position: absolute;
+
+  top: 8px;
+  right: -48px;
+
+  width: 42px;
+
+  opacity: 0.88;
+
+  pointer-events: none;
+
+  filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.18));
+
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+}
+
+/* mini efecto elegante */
+.header:hover .header-crown {
+  transform: translateY(-2px) scale(1.03);
+}
+/* =========================
+   NAV DESKTOP
+   ========================= */
+.nav {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.nav a {
+  font-size: var(--fs-small);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-weight: 100;
+  position: relative;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* =========================
+   BOTÓN MOBILE
+   ========================= */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* =====================================================
+   MOBILE MENU (LIMPIO Y FUNCIONAL)
+   ===================================================== */
+
+@media (max-width: 768px) {
+  /* Mostrar botón */
+  .menu-toggle {
+    display: block;
+    z-index: 1001;
+  }
+
+  /* Bloquear scroll */
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  /* NAV FULLSCREEN */
+  .nav {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+
+    transform: translateY(-100%);
+    transition: transform 0.4s ease;
+
+    z-index: 999;
+  }
+
+  /* ACTIVO */
+  body.menu-open .nav {
+    transform: translateY(0);
+  }
+
+  /* LINKS */
+  .nav a {
+    font-size: 1.6rem;
+    font-family: var(--font-title);
+    color: var(--color-primary);
+  }
+
+  .header-crown {
+    width: 54px;
+
+    top: 5px;
+    right: -62px;
+  }
+}
+
+/* =====================================================
+   EFECTO GLASS GLOBAL
+   ===================================================== */
+
+.nav {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+}

@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "pageTitle": "Primera Comunión de Lía y Fernanda"
+  },
+  "site": {
+    "couple": "Primera Comunión"
+  },
+  "nav": {
+    "left": [
+      {
+        "label": "Presentación",
+        "href": "#presentation"
+      },
+      {
+        "label": "Ubicación",
+        "href": "#location"
+      }
+    ],
+    "right": [
+      {
+        "label": "Vestimenta",
+        "href": "#dresscode"
+      },
+      {
+        "label": "Programa",
+        "href": "#timeline"
+      },
+      {
+        "label": "Confirmación",
+        "href": "#rsvp"
+      }
+    ]
+  },
+  "music": {
+    "src": "assets/audio/cancion.mp3",
+    "autoplay": true
+  },
+  "hero": {
+    "pretitle": "Mi Primera Comunión",
+    "names": "Lía y Fernanda",
+    "date": "2026-11-28T10:00:00",
+    "background": "assets/img/hero.png"
+  },
+  "presentation": {
+    "title": "Un día lleno de fe, amor y bendiciones que queremos compartir con las personas más especiales.",
+    "parents": [
+      {
+        "names": [
+          "Neftali Aguilar Tapia",
+          "Fabiola Rodríguez García"
+        ],
+        "note": "Papás"
+      }
+    ],
+    "padrinos": [
+      {
+        "names": [
+          "Daniela",
+          "Mario Cruz"
+        ],
+        "note": "Padrinos"
+      }
+    ],
+    "text": "Con mucha alegría te invitamos a acompañarnos en nuestra Primera Comunión y celebrar este momento tan especial en nuestras vidas.",
+    "icon": ""
+  },
+  "gratitude": {
+    "title": "Un día lleno de bendiciones",
+    "text": "Hoy recibimos a Jesús en nuestro corazón y queremos compartir esta alegría contigo. Gracias por acompañarnos y ser parte de un momento tan especial en nuestras vidas. Tu presencia hará que este día sea aún más inolvidable."
+  },
+  "location": {
+    "title": "Ubicación",
+    "subtitle": "Fecha y lugar",
+    "dateText": "28 · Noviembre · 2026",
+    "places": [
+      {
+        "title": "Misa de Primera Comunión",
+        "time": "10:00 AM",
+        "image": "assets/img/ceremonia.png",
+        "place": "Parroquia Nuestra Señora de la Medalla Milagrosa",
+        "address": "Miguel Negrete 2107, Bella Vista, 72500 Heroica Puebla de Zaragoza, Pue.",
+        "map": "https://maps.app.goo.gl/au4CTYWZiUEEMgwWA"
+      },
+      {
+        "title": "Recepción",
+        "time": "02:30 PM",
+        "image": "assets/img/recepcion.png",
+        "place": "Salón Jardín Los Faroles",
+        "address": "Carretera Puebla, Privada La Fragua, Blvd. Capitán Carlos Camacho Espíritu s/n-Km. 6.5, San Francisco Totimehuacan, 72595 Heroica Puebla de Zaragoza, Pue.",
+        "map": "https://maps.app.goo.gl/NXwYbmEsS9S8BP7A7"
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Programa",
+    "items": [
+      {
+        "time": "10:00 AM",
+        "text": "Misa de Primera Comunión",
+        "icon": "assets/img/4.svg"
+      },
+      {
+        "time": "02:30 PM",
+        "text": "Recepción y celebración",
+        "icon": "assets/img/6.svg"
+      }
+    ]
+  },
+  "dresscode": {
+    "title": "Código de Vestimenta",
+    "type": "Casual elegante",
+    "image": "assets/img/9.svg",
+    "menTitle": "",
+    "womenTitle": "",
+    "men": [],
+    "women": [],
+    "note": "Te invitamos a incorporar un toque mexicano a tu vestimenta."
+  },
+  "gifts": {
+    "title": "Sugerencia de Regalos",
+    "intro": "Lo más importante es compartir este día contigo, pero si deseas obsequiarnos algo, lo recibiremos con mucho cariño.",
+    "options": [
+      {
+        "title": "Sobre con efectivo",
+        "description": "Si deseas obsequiarnos algo, agradeceremos mucho tu cariño mediante un sobre.",
+        "type": "text"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Galería",
+    "type": "images",
+    "items": []
+  },
+  "rsvp": {
+    "phone": "522224866911",
+    "title": "Confirmación de Asistencia",
+    "intro": "Nos encantará contar contigo en este día tan especial. Por favor, confirma tu asistencia.",
+    "fields": {
+      "namePlaceholder": "Nombre completo",
+      "attendancePlaceholder": "¿Podrás acompañarnos?",
+      "attendanceOptions": [
+        "Sí asistiré",
+        "No podré asistir"
+      ],
+      "messagePlaceholder": "Mensaje o bendición",
+      "buttonText": "Confirmar por WhatsApp"
+    },
+    "note": "Agradecemos confirmar antes del .",
+    "success": "¡Gracias por confirmar! Nos encantará compartir este día contigo."
+  },
+  "footer": {
+    "names": "Primera Comunión de Lía y Fernanda",
+    "credits": "Diseñado con amor por Shiny Maker Studio"
+  }
+}

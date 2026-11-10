@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title id="pageTitle"></title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/header.css" />
+  <link rel="stylesheet" href="assets/css/hero.css" />
+  <link rel="stylesheet" href="assets/css/sections.css" />
+  <link rel="stylesheet" href="assets/css/gallery.css" />
+  <link rel="stylesheet" href="assets/css/rsvp.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+</head>
+
+<body>
+
+  <div class="falling-leaves">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <!-- ================= MUSIC PLAYER ================= -->
+  <button id="musicToggle" class="music-toggle" aria-label="Música">
+    <img id="musicIcon" src="assets/img/play.svg" />
+  </button>
+  <audio id="bgMusic" loop playsinline></audio>
+
+  <!-- ========================= HEADER ========================= -->
+  <header class="header" id="header">
+    <div class="header-container">
+      <nav class="nav nav-left" id="navLeft"></nav>
+
+      <div class="header-logo">
+        <a href="#hero" id="headerLogo"></a>
+      </div>
+
+      <nav class="nav nav-right" id="navRight"></nav>
+
+      <button class="menu-toggle" id="menuToggle">☰</button>
+    </div>
+  </header>
+
+  <!-- ================= SOBRE ================= -->
+  <div id="envelopeOverlay" class="envelope-overlay">
+    <div class="envelope">
+      <div class="flap front"></div>
+      <div class="flap top"></div>
+      <div class="letter"></div>
+      <div id="sealButton" class="seal">
+        <img src="assets/img/sello.svg" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= HERO ================= -->
+  <section id="hero" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <span class="hero-pretitle" id="heroPretitle"></span>
+      <h1 class="hero-names" id="heroNames"></h1>
+      <div class="hero-divider"></div>
+      <div id="countdownTimer" class="hero-countdown"></div>
+    </div>
+
+    <div class="hero-scroll"><span></span></div>
+  </section>
+  <!-- ================= PRESENTACIÓN ================= -->
+  <section id="presentation" class="section section--framed section--framed-pink">
+    <div class="frame-box">
+      <div class="presentation-content">
+        <h2 class="section-title reveal-title" id="presentationTitle"></h2>
+
+        <!-- PADRES -->
+        <div class="presentation-parents reveal-left" id="presentationParents"></div>
+
+        <!-- PADRINOS -->
+        <div class="presentation-parents reveal-right" id="presentationPadrinos"></div>
+
+        <!-- TEXTO -->
+        <p class="presentation-text reveal-left" id="presentationText"></p>
+
+        <img id="presentationIcon" class="presentation-icon" alt="" />
+      </div>
+    </div>
+  </section>
+  <!-- ================= Agradecimiento ================= -->
+  <section id="gratitude" class="section section--flowers section--soft">
+    <div class="container text-center">
+      <h2 class="section-title reveal-title" id="gratitudeTitle"></h2>
+      <div class="divider"></div>
+      <p class="gratitude-text reveal-left" id="gratitudeText"></p>
+      <img src="assets/img/cruz.svg" class="grattitud-img" alt="" />
+
+    </div>
+  </section>
+  <!-- ================= LUGAR ================= -->
+  <section id="location" class="section section--framed section--framed-blue">
+    <div class="frame-box">
+
+      <div class="container text-center">
+        <h2 class="section-title reveal-title" id="locationTitle"></h2>
+        <p class="location-subtitle reveal-left" id="locationSubtitle"></p>
+
+        <div class="location-box">
+          <img src="assets/img/copa.png" class="location-castillo-solid" alt="" />
+          <p class="location-date reveal-right" id="locationDate"></p>
+          <div class="location-grid reveal-left" id="locationGrid"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================= PROGRAMA ================= -->
+  <section id="timeline" class="section section--flowers section--soft">
+    <div class="flower flower--top"></div>
+    <div class="flower flower--bottom"></div>
+
+    <h2 class="section-title reveal-title" id="timelineTitle"></h2>
+
+    <div class="timeline-vertical" id="timelineContainer">
+      <div class="timeline-line"></div>
+    </div>
+  </section>
+
+  <!-- ================= DRESS CODE ================= -->
+  <section id="dresscode" class="section section--framed section--framed-blue">
+    <div class="frame-box">
+      <div class="dresscode-content">
+
+        <h2 class="section-title reveal-title" id="dresscodeTitle"></h2>
+
+        <img id="dresscodeImage" class="dresscode-illustration reveal-zoom" alt="Dress Code" />
+
+        <p class="dresscode-type reveal-left" id="dresscodeType"></p>
+
+        <div class="dresscode-grid">
+
+          <!-- HOMBRES -->
+          <div class="dresscode-col reveal-left">
+            <h4 id="dresscodeMenTitle"></h4>
+            <ul id="dresscodeMen"></ul>
+          </div>
+
+          <!-- MUJERES -->
+          <div class="dresscode-col reveal-right">
+            <h4 id="dresscodeWomenTitle"></h4>
+            <ul id="dresscodeWomen"></ul>
+          </div>
+
+        </div>
+
+        <p class="dresscode-note reveal-left" id="dresscodeNote"></p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= REGALOS ================= 
+  <section id="gifts" class="section section--framed">
+    <div class="frame-box">
+      <div class="gifts-content">
+
+        <h2 class="section-title reveal-title" id="giftsTitle">
+          Sugerencia de Regalos
+        </h2>
+
+        <div class="divider"></div>
+
+        <p class="gifts-text reveal-right" id="giftsText">
+          Lo más importante para nosotros es compartir este día contigo.
+          Si deseas hacernos un obsequio, puedes elegir alguna de las siguientes opciones.
+        </p>
+
+        <div class="gift-options" id="giftsOptions"></div>
+
+        <div class="gift-image-wrapper reveal-left">
+          <img src="assets/img/11.svg" alt="Regalo decorativo" class="gift-image">
+        </div>
+
+      </div>
+    </div>
+  </section>
+-->
+
+  <!-- ================= RSVP ================= -->
+  <section id="rsvp" class="section section--accent">
+    <div class="container">
+      <div class="rsvp-content text-center">
+        <!-- TÍTULO -->
+        <h2 class="section-title reveal-title" id="rsvpTitle"></h2>
+
+        <div class="rsvp-passes reveal-left hidden" id="rsvpPassesBox">
+          <p>
+            Hemos reservado estos lugares<br>
+            en su honor.
+          </p>
+
+          <div class="passes-card">
+            Pase para <span id="rsvpPasses"></span> personas
+          </div>
+        </div>
+
+        <!-- INTRO -->
+        <p class="rsvp-intro reveal-left" id="rsvpIntro"></p>
+
+        <!-- =================
+           FORMULARIO RSVP
+           ================= -->
+        <form class="rsvp-form" id="rsvpForm">
+          <!-- NOMBRE (PRELLENADO DESDE PANEL) -->
+          <div class="rsvp-field">
+            <label>Invitado</label>
+            <input type="text" id="rsvpName" />
+            <small class="rsvp-helper"> </small>
+          </div>
+
+          <!-- ASISTENCIA -->
+          <div class="rsvp-field">
+            <label>¿Podrás acompañarnos?</label>
+            <select id="rsvpAttendance" required></select>
+          </div>
+
+          <!-- MENSAJE -->
+          <div class="rsvp-field optional">
+            <label>Mensaje (opcional)</label>
+            <textarea id="rsvpMessage"></textarea>
+          </div>
+
+          <!-- BOTÓN -->
+          <button type="submit" class="btn btn-primary rsvp-submit" id="rsvpButton">
+            Confirmar por WhatsApp
+          </button>
+        </form>
+
+        <p class="rsvp-note" id="rsvpNote"></p>
+
+        <!-- MENSAJE FINAL -->
+        <div class="rsvp-success hidden" id="rsvpSuccess"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p id="footerNames"></p>
+      <small id="footerCredits"></small>
+
+      <div class="footer-social">
+        <a href="https://www.instagram.com/shinymakerstudio" target="_blank" aria-label="Instagram">
+          <img src="assets/img/ig.png" alt="Instagram" />
+        </a>
+
+        <a href="https://wa.me/522212576641" target="_blank" aria-label="WhatsApp">
+          <img src="assets/img/wh.png" alt="WhatsApp" />
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=61587591115184" target="_blank" aria-label="Facebook">
+          <img src="assets/img/fb.png" alt="Facebook" />
+        </a>
+      </div>
+      <div class="footer-website">
+        <a href="https://shiny-maker.com/" target="_blank">
+          https://shiny-maker.com/
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const pases = params.get('pases');
+
+    const passesBox = document.getElementById('rsvpPassesBox');
+    const passesText = document.getElementById('rsvpPasses');
+
+    if (pases && !isNaN(pases)) {
+      passesText.textContent = pases;
+      passesBox.classList.remove('hidden');
+    }
+  </script>
+  <script src="assets/js/data-loader.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/countdown.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/rsvp.js"></script>
+</body>
+
+</html>
