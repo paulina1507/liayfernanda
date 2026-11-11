@@ -55,8 +55,8 @@
     "padrinos": [
       {
         "names": [
-          "Daniela",
-          "Mario Cruz"
+          "Mario y",
+          "Daniela Cruz"
         ],
         "note": "Padrinos"
       }
@@ -121,8 +121,8 @@
     "intro": "Lo más importante es compartir este día contigo, pero si deseas obsequiarnos algo, lo recibiremos con mucho cariño.",
     "options": [
       {
-        "title": "Sobre con efectivo",
-        "description": "Si deseas obsequiarnos algo, agradeceremos mucho tu cariño mediante un sobre.",
+        "title": "Sobre de efectivo o transferencia",
+        "description": "",
         "type": "text"
       }
     ]
